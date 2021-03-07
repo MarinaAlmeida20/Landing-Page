@@ -1,39 +1,36 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body{
-    margin: 0 auto;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+
 }
 
-#header {
+#header{
     position: fixed;
-    background-color: blueviolet;
+    background-color: black;
+    height: 100px;
     width: 100%;
+    margin: 0 auto;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1%;
 }
 
-#header-img{
-    margin-left: 3%;
-    margin-top: 0%;
-    width: 170px;
+img#header-img{
+    width: 220px;
+    height: 100px;
 }
 
-nav{
-    width: 40%;
-}
-
-nav > ul{
-    display: flex;
-    margin: 0 auto;
+.nav{
+    display: inline-block;
+    /* margin: 0 auto; */
+    /* padding: 10% 20%; */
 
 }
-
 
 nav > ul > li {
     list-style-type: none;
@@ -46,24 +43,29 @@ nav > ul > li {
 
 nav > ul > li a {
     text-decoration: none;
-    color: aliceblue;
 }
 
-#firstSection {
-    align-items: center;
+#firstSection{
+    display: flex;
+    padding: 10%;
+    justify-content: space-around;
 }
+
+#firtSection form{
+
+}
+    
 
 #product {
     display: flex;
     text-align: center;
 }
 
-.price {
-    text-align: center;
-    padding: 10px;
-    background-color: black;
-    color: aliceblue;
-    border-color: black;
-    border-radius: 8px;
-    width: 100px;
+button {
+    cursor: pointer;
+    background-color: grey;
+    border-radius: 5px;
+    border-color: aliceblue;
+    padding: 5px 25px;
+    margin: 30px;
 }
